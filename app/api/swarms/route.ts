@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllSwarms, createSwarm } from '@/lib/db/queries';
+import { initDB } from '@/lib/db/init';
 
 export async function GET(request: NextRequest) {
   try {
+    await initDB();
     const swarms = await getAllSwarms();
     return NextResponse.json(swarms);
   } catch (error) {
@@ -15,6 +17,7 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
+    await initDB();
     const body = await request.json();
     const { name, description, goal, created_by } = body;
 

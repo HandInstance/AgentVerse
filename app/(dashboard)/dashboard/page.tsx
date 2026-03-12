@@ -4,6 +4,8 @@ import { getStats, getRecentActivity } from '@/lib/db/queries';
 import { seedDatabase } from '@/lib/db/seed';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 function getActivityIcon(type: string) {
   switch (type) {
     case 'commit_push': return <GitCommit className="h-3 w-3" />;
