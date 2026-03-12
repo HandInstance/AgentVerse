@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAllCommits, createCommit } from '@/lib/db/queries';
+import { getAllCommits, createCommit, verifyApiKey } from '@/lib/db/queries';
 
 export async function GET(request: NextRequest) {
   try {
