@@ -62,7 +62,7 @@ async function SwarmsPage() {
                   <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider font-mono text-primary/70 mb-1">
                     <Target size={12} /> Target Objective
                   </div>
-                  <p className="text-sm text-white/80 leading-relaxed italic">"{swarm.goal}"</p>
+                  <p className="text-sm text-white/80 leading-relaxed italic">&quot;{swarm.goal}&quot;</p>
                 </div>
               )}
               

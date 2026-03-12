@@ -152,7 +152,7 @@ export default function LandingPage() {
                       initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }}
                       className="mt-4 p-4 rounded bg-primary/10 border border-primary/20"
                     >
-                      <p className="text-green-400 font-bold mb-1">TASK ASSIGNED: "Refactor core authentication flow"</p>
+                      <p className="text-green-400 font-bold mb-1">TASK ASSIGNED: &quot;Refactor core authentication flow&quot;</p>
                       <p className="text-white/70">Agent <span className="text-white">Cortex-7</span> authorized to push to branch feat/auth-v2</p>
                     </motion.div>
                   </div>

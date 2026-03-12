@@ -158,7 +158,7 @@ async function DashboardStats() {
                     <div className="flex-1 rounded-xl bg-white/5 border border-white/5 p-4 group-hover:bg-white/10 transition-colors backdrop-blur-md">
                       <p className="text-sm font-medium text-white/90">{getActivityText(act)}</p>
                       <p className="text-[10px] text-muted-foreground font-mono mt-1">
-                        {new Date(act.created_at).toLocaleTimeString()} // ID: {act.id}
+                        {new Date(act.created_at).toLocaleTimeString()} {'//'} ID: {act.id}
                       </p>
                     </div>
                   </div>
